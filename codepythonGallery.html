@@ -22,6 +22,86 @@
       color: #777;
   }
 
+  .myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: visible; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 135px;
+  right: 25px;
+  color: #fff;
+  opacity: 1;
+  font-size: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #4b84da;
+  text-decoration: none;
+  cursor: pointer;
+}
+
   .container {
       padding: 80px 120px;
   }
@@ -35,6 +115,10 @@
   .person:hover {
       border-color: #f1f1f1;
   }
+
+  .selected img {
+	opacity:0.5;
+}
 
   .bg-1 {
       background: #2d2d30;
@@ -193,6 +277,9 @@ a:focus, a:hover { text-decoration: none; color: #4b84da; }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 50px;}
   .sidenav a {font-size: 18px;}
+  .modal-content {
+    width: 100%;
+  }
 
 }
 /* end style side bar */
@@ -283,7 +370,7 @@ a:focus, a:hover { text-decoration: none; color: #4b84da; }
           </li>
 
         <li><a href="people2.html"> People </a></li>
-        <li><a data-toggle="modal" data-target="#myModal"> Contact </a></li>
+        <!-- <li><a data-toggle="modal" data-target="#myModal2"> Contact </a></li> -->
       </ul>
     </div>
   </div>
@@ -293,7 +380,6 @@ a:focus, a:hover { text-decoration: none; color: #4b84da; }
     <a href="codepython2.html">Plots</a>
     <a href="codepyParOWigD.html">ParOWigD</a>
     <a href="codepythonGallery.html">Strange attractors</a>
-    <a href="#">....</a>
     <a href="#">....</a>
   </div>
 
@@ -306,87 +392,110 @@ a:focus, a:hover { text-decoration: none; color: #4b84da; }
 
 <div class="container-fluid">
         <br> <br> <br><br>
-        <div class="text-justify col-md-10 col-md-offset-1">
-                <h3> Publication quality plots. <font color = red> New gallery! go to  </font> <a href="codepythonGallery.html"> <u> strange attractors </u></a> </h3>
 
-                <p> A lot of scientific publications show their results with plots,
-                    so here I show you how to do it with Matplotlib. Also, I put some others that might be useful.  </p>
-                </div>
-            <div class="row col-md-10 col-md-offset-1">
-                <div class="column ">
-                    <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic1D.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                        <img src="./galleryPlots/basic1D_Ej1C.png"  class="img-thumbnail" style="width: 90%">
-                    </a>
-                    <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DSurfaceEj2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                        <img src="./galleryPlots/cilindro.png" class="img-thumbnail" style="width: 90%">
-                    </a>
-                    <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DSurfaceEj1.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code">
-                        <img src="./galleryPlots/basic2D_Ej1S.png" class="img-thumbnail" style="width: 90%">
-                    </a>
+        <h2>Datashader Gallery for <a href="http://datashader.org/topics/strange_attractors.html" target="_blank">Strange attractors</a>  </h2>
+<br><br>
+            <!--/main slider carousel-->
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u3.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u4.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u5.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u6.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u7.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u8.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u9.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u10.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u11.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u12.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u13.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u14.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u15.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u16.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/sym_chaos/IconSet_u17.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u3.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u4.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u5.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u6.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u7.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u8.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u9.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u10.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u11.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u12.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u13.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/Gmira_maps/gmSet3t2_u14.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u3.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u4.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u5.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u6.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u7.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u8.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u9.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u10.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/cliffordSet_u11.png" alt="" style="width:100%;max-width:120px">
 
-                    <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj3-Colors.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code">
-                        <img src="./galleryPlots/attractorColor1.png" class="img-thumbnail" style="width: 90%">
-                    </a>
+            <img class="myImg" src="./galleryHR/strange_family/BedheadSet_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/BedheadSet_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/BedheadSet_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/BedheadSet_u3.png" alt="" style="width:100%;max-width:120px">
 
-                </div>
-                <div class="column">
-                    <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic1DEj2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                        <img src="./galleryPlots/FigNet500dot_1.png" class="img-thumbnail" style="width: 90%">
-                    </a>
-                     <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj3.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                        <img src="./galleryPlots/attractorHist.png" class="img-thumbnail" style="width: 90%">
-                    </a>
-                    <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj1.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                        <img src="./galleryPlots/alphaqubitD.png" class="img-thumbnail" style="width: 90%">
-                    </a>
-                    <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj3-Colors.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code">
-                        <img src="./galleryPlots/attractorJong.png" class="img-thumbnail" style="width: 90%">
-                    </a>
-                </div>
-                <div class="column">
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DSurfaceEj1.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                            <img src="./galleryPlots/basic2D_Ej1Sangle1.png" class="img-thumbnail" style="width: 90%">
-                        </a>
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u3.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u4.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u5.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u6.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/DeJongSet_u7.png" alt="" style="width:100%;max-width:120px">
 
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DContourEj2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                            <img src="./galleryPlots/basic2D_Ej2C.png" class="img-thumbnail" style="width: 90%">
-                        </a>
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DContourEj1.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                            <img src="./galleryPlots/basic2D_Ej1C.png" class="img-thumbnail" style="width: 90%">
-                        </a>
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj3-Colors.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code">
-                            <img src="./galleryPlots/attractorSvensson.png" class="img-thumbnail" style="width: 90%">
-                        </a>
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj3-Colors.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code">
-                            <img src="./galleryPlots/attractorSvensson2.png" class="img-thumbnail" style="width: 90%">
-                        </a>
+            <img class="myImg" src="./galleryHR/strange_family/FractalDreamSet_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/FractalDreamSet_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/FractalDreamSet_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/FractalDreamSet_u3.png" alt="" style="width:100%;max-width:120px">
 
-                </div>
-                <div class="column">
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                                <img src="./galleryPlots/map_chaos.png" class="img-thumbnail" style="width: 90%">
-                            </a>
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DContourEj3.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                            <img src="./galleryPlots/basic2D_Ej3C.png" class="img-thumbnail" style="width: 90%">
-                        </a>
+            <img class="myImg" src="./galleryHR/strange_family/Hopalong1Set_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/Hopalong1Set_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/Hopalong1Set_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/Hopalong1Set_u3.png" alt="" style="width:100%;max-width:120px">
 
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DContourEj4.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                            <img src="./galleryPlots/basic2D_Ej4C.png" class="img-thumbnail" style="width: 90%">
-                        </a>
-                        <a href="https://nbviewer.jupyter.org/github/lazarusA/CodeSnippets/blob/master/CodeSnippetsPython/ScientificPlotBasic2DDensityEj4.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-                            <img src="./galleryPlots/ikedaHist.png" class="img-thumbnail" style="width: 90%">
-                        </a>
+            <img class="myImg" src="./galleryHR/strange_family/Hopalong2Set_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/Hopalong2Set_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/Hopalong2Set_u2.png" alt="" style="width:100%;max-width:120px">
 
-                </div>
+            <img class="myImg" src="./galleryHR/strange_family/SvenssonSet_u0.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/SvenssonSet_u1.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/SvenssonSet_u2.png" alt="" style="width:100%;max-width:120px">
+            <img class="myImg" src="./galleryHR/strange_family/SvenssonSet_u3.png" alt="" style="width:100%;max-width:120px">
+            <br><br><br>
 
-            </div>
-            <br>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
 
     </div>
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="myModal2" role="dialog">
         <div class="modal-dialog modal-sm">
           <!-- Modal content-->
           <div class="modal-content">
@@ -517,5 +626,48 @@ a:focus, a:hover { text-decoration: none; color: #4b84da; }
             }, 500);
           });
 
-        </script>
+          $('#myCarousel').carousel({
+    interval: 4000
+});
+
+// handles the carousel thumbnails
+$('[id^=carousel-selector-]').click( function(){
+  var id_selector = $(this).attr("id");
+  var id = id_selector.substr(id_selector.length -1);
+  id = parseInt(id);
+  $('#myCarousel').carousel(id);
+  $('[id^=carousel-selector-]').removeClass('selected');
+  $(this).addClass('selected');
+});
+
+// when the carousel slides, auto update
+$('#myCarousel').on('slid', function (e) {
+  var id = $('.item.active').data('slide-number');
+  id = parseInt(id);
+  $('[id^=carousel-selector-]').removeClass('selected');
+  $('[id=carousel-selector-'+id+']').addClass('selected');
+});
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.myImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.myImg').click(function(){
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+</script>
+
 </html>
