@@ -4,6 +4,8 @@
   <title>Lazaro Alonso </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -21,6 +23,7 @@
       font: 400 15px/1.8 Lato, sans-serif;
       color: #777;
   }
+
 
   .container {
       padding: 80px 120px;
@@ -303,9 +306,54 @@ a:focus, a:hover { text-decoration: none; color: #4b84da; }
 
 
 <!-- Container (The Band Section) -->
+<br><br><br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="cardholder">
+        <div class="card">
+          <img src= "./galleryMakie/bunnyW.png" style="width:100%;max-width:615px"/>
+          <p class="desc">  <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/makie_jl/onlyBunny.jl"> <u> Get code </u></a> </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="cardholder">
+        <div class="card">
+          <img src="./galleryMakie/odeField3.png" style="width:90%;max-width:310px" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="cardholder">
+        <div class="card">
+           <img src="./galleryMakie/sY_3_-1.png"  style="width:90%;max-width:310px" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="cardholder">
+        <div class="card">
+          <img src="./galleryMakie/FigStats.png" style="width:100%;max-width:310px" />
+    <!-- <p class="desc">  Get Code </p> -->
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
 
 <div class="container-fluid">
-    <br><br><br>
+
+
+    <br>
     <h2> Beautiful Makie </h2>
     The goal here for me is to have in one place things that I will need or
     I already need on a daily basis for my work. And as a byproduct
@@ -327,200 +375,413 @@ a:focus, a:hover { text-decoration: none; color: #4b84da; }
       </font> <a href="https://github.com/lazarusA/MakieNotebooks"> <u>examples.</u></a>
       </h3>
 
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne" style="width:300px;overflow:hidden;">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Line Charts
+                </a>
+              </h3>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col">
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLine.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigLine.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigLineScatter.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigLineScatter2.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigLineScatter3.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3LegendOutside.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigLegendOut.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3LegendOutside2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigLegendOut2.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_inset.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigInset1.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_inset.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigInset2.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3cbarRight.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigcbarRight.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLegUndcbar.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigLegUndcbar.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigMultipleCbars.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigMultipleCbars.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Fig4barsAround.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/Fig4barsAround.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+
+                      </div>
+
+                    </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Filled curves
+                </a>
+              </h3>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col">
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigFilled1.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigFilled2.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigFilled3.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigFilled4.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigFilled5.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigFilled6.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+
+
+                      </div>
+
+
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="streamplot">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsestreamplot" aria-expanded="false" aria-controls="collapsestreamplot">
+                  Streamplots
+                </a>
+              </h3>
+            </div>
+            <div id="collapsestreamplot" class="panel-collapse collapse" role="tabpanel" aria-labelledby="streamplot">
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col-sm-10 text-justify">
+                          <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/makie_jl/streamplot3.jl" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/odeField3.png" alt="" style="width:90%;max-width:610px">
+                          </a>
+                          <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/makie_jl/streamplot2.jl" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/odeField2.png" alt="" style="width:90%;max-width:310px">
+                          </a>
+                          <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/makie_jl/streamplot1.jl" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/odeField.png" alt="" style="width:90%;max-width:250px">
+                          </a>
+
+                      </div>
+
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Stats Plots, BoxPlot, ViolinPlot
+                </a>
+              </h3>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col">
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigStats.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigStats.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigViolin.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigViolin.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigBoxplot.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigBoxplot.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHistogramDensity.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigHistogramDensity.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigDensity_mtcars.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigDensity_mtcarsLegRight.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigDensity_mtcars.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigDensity_mtcarsLegTop.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigBoxplotViolin_airquality.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigAirqualityBox.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                          <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigBoxplotViolin_airquality.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                              <img src="./galleryMakie/FigAirqualityViolin.png" alt="" style="width:100%;max-width:310px">
+                          </a>
+                      </div>
+
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingF">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseF" aria-expanded="false" aria-controls="collapseF">
+                    Heatmap plots
+                  </a>
+                </h3>
+              </div>
+              <div id="collapseF" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingF">
+                <div class="panel-body">
+
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarLeft.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigHeatCbarLeft.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarRight.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigHeatCbarRight.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarTop.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigHeatCbarTop.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarBottom.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigHeatCbarBottom.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridScatters.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigGridScatters.png" alt="" style="width:100%;max-width:450px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridHeat.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigGridHeat.png" alt="" style="width:100%;max-width:450px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridHeatSharedCbar.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigGridHeatSharedCbar.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridHeatSharedCbarH.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigGridHeatSharedCbarH.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatxyz.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigHeatxyz.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="countour">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsecountour" aria-expanded="false" aria-controls="collapsecountour">
+                    Countour lines countour
+                  </a>
+                </h3>
+              </div>
+              <div id="collapsecountour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="countour">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-10 text-justify">
+
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigContourUndHeat.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigContourUndHeat.png" alt="" style="width:100%;max-width:510px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigContour1.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigContour1.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3d_surf_countour.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigSurfCountour.png" alt="" style="width:100%;max-width:450px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigContour2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigContour2_1.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+
+                        </div>
+
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="3dplots">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3dplots" aria-expanded="false" aria-controls="collapse3dplots">
+                    Surfaces, wireframe, lines 3D
+                  </a>
+                </h3>
+              </div>
+              <div id="collapse3dplots" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3dplots">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-10 text-justify">
+                            <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/realSphericalHarmonics.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/sY_3_-1.png" alt="" style="width:90%;max-width:310px">
+                            </a>
+                            <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/realSphericalHarmonics.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/sY_3_0.png" alt="" style="width:90%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigTori1_2cmap.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_sphere.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigSphere.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigTori1.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigTori2.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigTori1_2.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+
+
+                        </div>
+
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="Glowing">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseGlowing" aria-expanded="false" aria-controls="collapseGlowing">
+                    Glowing plots
+                  </a>
+                </h3>
+              </div>
+              <div id="collapseGlowing" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Glowing">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-10 text-justify">
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlowCircle.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigGlowCircle.png" alt="" style="width:100%;max-width:250px">
+                            </a>
+
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlowCircle.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigGlowCircles.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlowCircle.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigngonShapes.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlow.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigGlow.png" alt="" style="width:100%;max-width:500px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigBlackBackground3.png" alt="" style="width:100%;max-width:350px">
+                            </a>
+
+
+                        </div>
+
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="msliders">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsemsliders" aria-expanded="false" aria-controls="collapsemsliders">
+                    Plots with a menu and sliders
+                  </a>
+                </h3>
+              </div>
+              <div id="collapsemsliders" class="panel-collapse collapse" role="tabpanel" aria-labelledby="msliders">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-10 text-justify">
+                            <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/scripts/sphericalHarmonicsPlot.jl" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/slidersSH.png" alt="" style="width:90%;max-width:310px">
+                            </a>
+                        </div>
+
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="advplots">
+                <h3 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseadvplots" aria-expanded="false" aria-controls="collapseadvplots">
+                    Advanced plots/ black background
+                  </a>
+                </h3>
+              </div>
+              <div id="collapseadvplots" class="panel-collapse collapse" role="tabpanel" aria-labelledby="advplots">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-10 text-justify">
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigBlackBackground.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigBlackBackground2.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigBlueBackground.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigBlueBackground2.png" alt="" style="width:100%;max-width:310px">
+                            </a>
+
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigLines3D.png" alt="" style="width:100%;max-width:400px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigWire.png" alt="" style="width:100%;max-width:400px">
+                            </a>
+                            <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/FigWireSurf.png" alt="" style="width:100%;max-width:400px">
+                            </a>
+                            <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/realSphericalHarmonics.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/sblackY41.png" alt="" style="width:90%;max-width:310px">
+                            </a>
+
+                            <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/bunnyEaster.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
+                                <img src="./galleryMakie/bunny.png" alt="" style="width:90%;max-width:310px">
+                            </a>
+
+                        </div>
+
+                      </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
     <br><br>
-    <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/realSphericalHarmonics.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/sY_3_-1.png" alt="" style="width:90%;max-width:310px">
-    </a>
-    <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/realSphericalHarmonics.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/sblackY41.png" alt="" style="width:90%;max-width:310px">
-    </a>
-    <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/realSphericalHarmonics.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/sY_3_0.png" alt="" style="width:90%;max-width:310px">
-    </a>
-    <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/scripts/sphericalHarmonicsPlot.jl" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/slidersSH.png" alt="" style="width:90%;max-width:310px">
-    </a>
-
-
-    <a href="https://github.com/lazarusA/MakieNotebooks/blob/main/bunnyEaster.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/bunny.png" alt="" style="width:90%;max-width:310px">
-    </a>
-
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLine.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLine.png" alt="" style="width:100%;max-width:310px">
-    </a>
-
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLineScatter.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLineScatter2.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLineScatter3.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3LegendOutside.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLegendOut.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3LegendOutside2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLegendOut2.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_inset.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigInset1.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_inset.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigInset2.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLineScatter3cbarRight.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigcbarRight.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigLegUndcbar.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLegUndcbar.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigMultipleCbars.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigMultipleCbars.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Fig4barsAround.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/Fig4barsAround.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigFilled1.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigFilled2.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigFilled3.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigFilled4.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigFilled5.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie_filledLines.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigFilled6.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigStats.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigStats.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigViolin.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigViolin.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigBoxplot.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigBoxplot.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHistogramDensity.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigHistogramDensity.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigDensity_mtcars.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigDensity_mtcarsLegRight.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigDensity_mtcars.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigDensity_mtcarsLegTop.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigBoxplotViolin_airquality.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigAirqualityBox.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigBoxplotViolin_airquality.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigAirqualityViolin.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarLeft.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigHeatCbarLeft.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarRight.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigHeatCbarRight.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarTop.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigHeatCbarTop.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatCbarBottom.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigHeatCbarBottom.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridScatters.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigGridScatters.png" alt="" style="width:100%;max-width:450px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridHeat.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigGridHeat.png" alt="" style="width:100%;max-width:450px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridHeatSharedCbar.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigGridHeatSharedCbar.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGridHeatSharedCbarH.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigGridHeatSharedCbarH.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigHeatxyz.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigHeatxyz.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3d_surf_countour.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigSurfCountour.png" alt="" style="width:100%;max-width:450px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigContour2.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigContour2_1.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigContourUndHeat.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigContourUndHeat.png" alt="" style="width:100%;max-width:510px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigContour1.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigContour1.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_sphere.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigSphere.png" alt="" style="width:100%;max-width:410px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigTori1.png" alt="" style="width:100%;max-width:600px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigTori2.png" alt="" style="width:100%;max-width:600px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigTori1_2.png" alt="" style="width:100%;max-width:600px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/Makie3D_tori.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigTori1_2cmap.png" alt="" style="width:100%;max-width:600px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigBlackBackground.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigBlackBackground2.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigBlueBackground.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigBlueBackground2.png" alt="" style="width:100%;max-width:310px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigBlackBackground3.png" alt="" style="width:100%;max-width:350px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigLines3D.png" alt="" style="width:100%;max-width:400px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigWire.png" alt="" style="width:100%;max-width:400px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/MakieBlack.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigWireSurf.png" alt="" style="width:100%;max-width:400px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlowCircle.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigGlowCircle.png" alt="" style="width:100%;max-width:300px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlowCircle.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigGlowCircles.png" alt="" style="width:100%;max-width:500px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlowCircle.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigngonShapes.png" alt="" style="width:100%;max-width:500px">
-    </a>
-    <a href="https://nbviewer.jupyter.org/github/lazarusA/MakieNotebooks/blob/main/FigGlow.ipynb" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Get Code" >
-        <img src="./galleryMakie/FigGlow.png" alt="" style="width:100%;max-width:700px">
-    </a>
-
+</div>
+<br>
 
 </div>
-            <br>
-
-    </div>
 
 
 <!-- Modal -->
